@@ -4,121 +4,140 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mariscos Richard</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
 <style>
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background: #f5f5f5;
-  color: #333;
-}
-header {
-  background: #0a6c8e;
-  color: white;
-  padding: 15px;
-  text-align: center;
-}
-.container {
-  padding: 15px;
-}
-.section {
-  margin-bottom: 25px;
-}
-h2 {
-  border-bottom: 2px solid #0a6c8e;
-  padding-bottom: 5px;
-}
-.item {
-  display: flex;
-  justify-content: space-between;
-  margin: 5px 0;
-}
-.price {
-  font-weight: bold;
-}
+body { font-family: 'Poppins', sans-serif; margin:0; background:#f0f6f9; }
+header { background: linear-gradient(135deg,#0a6c8e,#0dcaf0); color:white; text-align:center; padding:25px;}
+.container { padding:15px; max-width:900px; margin:auto;}
+.section { margin-bottom:25px;}
+.section h2 { color:#0a6c8e;}
+.card { background:white; border-radius:12px; padding:12px; margin-bottom:10px;
+box-shadow:0 2px 8px rgba(0,0,0,0.1); animation:fadeUp .5s ease;}
+.item { display:flex; justify-content:space-between;}
+.price { font-weight:bold; color:#0a6c8e;}
+.actions { position:sticky; bottom:0; background:white; padding:10px; display:flex; gap:10px;}
+.btn { flex:1; text-align:center; padding:12px; border-radius:8px; color:white; text-decoration:none; font-weight:bold;}
+.whatsapp{background:#25D366;} .maps{background:#0a6c8e;}
+@keyframes fadeUp { from{opacity:0; transform:translateY(10px);} to{opacity:1;} }
 </style>
 </head>
+
 <body>
 
 <header>
-  <h1>Mariscos Richard</h1>
+<h1>🦐 Mariscos Richard</h1>
+<p>Menú digital</p>
 </header>
 
 <div class="container">
 
+<!-- COCTELES -->
 <div class="section">
-<h2>Cócteles</h2>
-<div class="item"><span>De camarón</span><span>$65 / $120</span></div>
-<div class="item"><span>De pulpo</span><span>$65 / $120</span></div>
-<div class="item"><span>De ostión</span><span>$65 / $120</span></div>
-<div class="item"><span>Campechano</span><span>$75 / $140</span></div>
-<div class="item"><span>Vuelve a la vida</span><span>$80 / $150</span></div>
+<h2>🍤 Cócteles</h2>
+<div class="card"><div class="item"><span>De camarón</span><span class="price">$65 / $120</span></div></div>
+<div class="card"><div class="item"><span>De pulpo</span><span class="price">$65 / $120</span></div></div>
+<div class="card"><div class="item"><span>De ostión</span><span class="price">$65 / $120</span></div></div>
+<div class="card"><div class="item"><span>De campechano</span><span class="price">$75 / $140</span></div></div>
+<div class="card"><div class="item"><span>Vuelve a la vida</span><span class="price">$80 / $150</span></div></div>
+<div class="card"><div class="item"><span>Bola de camarón</span><span class="price">$140</span></div></div>
+<div class="card"><div class="item"><span>Bola de campechana</span><span class="price">$160</span></div></div>
 </div>
 
+<!-- CALDOS -->
 <div class="section">
-<h2>Caldos</h2>
-<div class="item"><span>Camarón</span><span>$65 / $110</span></div>
-<div class="item"><span>Pescado</span><span>$65 / $110</span></div>
-<div class="item"><span>Jaiba</span><span>$65 / $110</span></div>
-<div class="item"><span>Sopa de mariscos</span><span>$145</span></div>
+<h2>🍲 Caldos</h2>
+<div class="card"><div class="item"><span>De camarón</span><span class="price">$65 / $110</span></div></div>
+<div class="card"><div class="item"><span>De pescado</span><span class="price">$65 / $110</span></div></div>
+<div class="card"><div class="item"><span>De jaiba</span><span class="price">$65 / $110</span></div></div>
+<div class="card"><div class="item"><span>Sopa de mariscos</span><span class="price">$145</span></div></div>
+<div class="card"><div class="item"><span>Vaso de caldo</span><span class="price">$25</span></div></div>
 </div>
 
+<!-- FILETES -->
 <div class="section">
-<h2>Camarones</h2>
-<div class="item"><span>Empanizados / Mojo / A la diabla / etc.</span><span>$130</span></div>
-<div class="item"><span>Para pelar</span><span>$160</span></div>
+<h2>🐟 Filetes</h2>
+<div class="card"><div class="item"><span>Empanizado</span><span class="price">$110</span></div></div>
+<div class="card"><div class="item"><span>Al mojo de ajo</span><span class="price">$110</span></div></div>
+<div class="card"><div class="item"><span>Al ajillo</span><span class="price">$110</span></div></div>
+<div class="card"><div class="item"><span>A la diabla</span><span class="price">$110</span></div></div>
+<div class="card"><div class="item"><span>A la veracruzana</span><span class="price">$110</span></div></div>
+<div class="card"><div class="item"><span>En chipotle</span><span class="price">$110</span></div></div>
+<div class="card"><div class="item"><span>A la plancha</span><span class="price">$110</span></div></div>
+<div class="card"><div class="item"><span>Relleno de mariscos</span><span class="price">$130</span></div></div>
+<div class="card"><div class="item"><span>Empapelado (cazuela)</span><span class="price">$130</span></div></div>
 </div>
 
+<!-- PULPO -->
 <div class="section">
-<h2>Pescados</h2>
-<div class="item"><span>Frito / Mojo / A la diabla / etc.</span><span>$140</span></div>
-<div class="item"><span>Relleno de mariscos</span><span>$170</span></div>
+<h2>🐙 Pulpo</h2>
+<div class="card"><div class="item"><span>Al mojo de ajo</span><span class="price">$130</span></div></div>
+<div class="card"><div class="item"><span>Al ajillo</span><span class="price">$130</span></div></div>
+<div class="card"><div class="item"><span>A la diabla</span><span class="price">$130</span></div></div>
+<div class="card"><div class="item"><span>A la veracruzana</span><span class="price">$130</span></div></div>
+<div class="card"><div class="item"><span>A la mantequilla</span><span class="price">$130</span></div></div>
+<div class="card"><div class="item"><span>Enamorado</span><span class="price">$130</span></div></div>
 </div>
 
+<!-- CEVICHE -->
 <div class="section">
-<h2>Filetes</h2>
-<div class="item"><span>Empanizado / Mojo / etc.</span><span>$110</span></div>
-<div class="item"><span>Relleno de mariscos</span><span>$130</span></div>
+<h2>🍋 Ceviche</h2>
+<div class="card"><div class="item"><span>De pescado</span><span class="price">$110 / $220</span></div></div>
 </div>
 
+<!-- TOSTADAS -->
 <div class="section">
-<h2>Pulpo</h2>
-<div class="item"><span>Al mojo / A la diabla / etc.</span><span>$130</span></div>
+<h2>🌮 Tostadas</h2>
+<div class="card"><div class="item"><span>De camarón</span><span class="price">$70</span></div></div>
+<div class="card"><div class="item"><span>De pescado</span><span class="price">$65</span></div></div>
+<div class="card"><div class="item"><span>Con pulpo</span><span class="price">$65</span></div></div>
+<div class="card"><div class="item"><span>Camarón con pulpo</span><span class="price">$80</span></div></div>
 </div>
 
+<!-- EXTRAS -->
 <div class="section">
-<h2>Tostadas</h2>
-<div class="item"><span>Camarón</span><span>$70</span></div>
-<div class="item"><span>Pescado / Pulpo</span><span>$65</span></div>
-<div class="item"><span>Mixta</span><span>$80</span></div>
+<h2>➕ Extras</h2>
+<div class="card"><div class="item"><span>Arroz</span><span class="price">$35</span></div></div>
+<div class="card"><div class="item"><span>Espagueti (domingo)</span><span class="price">$35</span></div></div>
+<div class="card"><div class="item"><span>Papas a la francesa</span><span class="price">$40</span></div></div>
+<div class="card"><div class="item"><span>Ingrediente extra</span><span class="price">$10</span></div></div>
 </div>
 
+<!-- BEBIDAS -->
 <div class="section">
-<h2>Bebidas</h2>
-<div class="item"><span>Refresco</span><span>$35</span></div>
-<div class="item"><span>Agua embotellada</span><span>$20</span></div>
-<div class="item"><span>Limonada</span><span>$25</span></div>
-<div class="item"><span>Jarra de agua</span><span>$85</span></div>
+<h2>🥤 Bebidas</h2>
+<div class="card"><div class="item"><span>Refresco (600 ml)</span><span class="price">$35</span></div></div>
+<div class="card"><div class="item"><span>Agua embotellada</span><span class="price">$20</span></div></div>
+<div class="card"><div class="item"><span>Limonada natural/mineral</span><span class="price">$25</span></div></div>
+<div class="card"><div class="item"><span>Refresco (355 ml)</span><span class="price">$30</span></div></div>
+<div class="card"><div class="item"><span>Jugo del valle</span><span class="price">$25</span></div></div>
+<div class="card"><div class="item"><span>Jarra de agua</span><span class="price">$85</span></div></div>
 </div>
 
+<!-- CERVEZA -->
 <div class="section">
-<h2>Cerveza</h2>
-<div class="item"><span>Sol / Tecate</span><span>$35</span></div>
-<div class="item"><span>Michelada</span><span>$50</span></div>
-<div class="item"><span>Cubana</span><span>$110</span></div>
+<h2>🍺 Cerveza</h2>
+<div class="card"><div class="item"><span>Cerveza sola</span><span class="price">$35</span></div></div>
+<div class="card"><div class="item"><span>Escarchada</span><span class="price">$50</span></div></div>
+<div class="card"><div class="item"><span>Michelada</span><span class="price">$50</span></div></div>
+<div class="card"><div class="item"><span>Cubana (1L)</span><span class="price">$110</span></div></div>
+<div class="card"><div class="item"><span>Cerveza c/camarones</span><span class="price">$130</span></div></div>
+<div class="card"><div class="item"><span>Cerveza c/ostiones</span><span class="price">$130</span></div></div>
+<div class="card"><div class="item"><span>Cubana 280 ml</span><span class="price">$60</span></div></div>
+<div class="card"><div class="item"><span>Cerveza campechana</span><span class="price">$160</span></div></div>
 </div>
 
+<!-- POSTRE -->
 <div class="section">
-<h2>Extras</h2>
-<div class="item"><span>Arroz</span><span>$35</span></div>
-<div class="item"><span>Papas</span><span>$40</span></div>
-<div class="item"><span>Ingrediente extra</span><span>$10</span></div>
+<h2>🍮 Postres</h2>
+<div class="card"><div class="item"><span>Flan napolitano</span><span class="price">$30</span></div></div>
 </div>
 
-<div class="section">
-<h2>Postres</h2>
-<div class="item"><span>Flan napolitano</span><span>$30</span></div>
 </div>
 
+<div class="actions">
+<a class="btn whatsapp" href="https://wa.me/527225973677" target="_blank">💬 WhatsApp</a>
+<a class="btn maps" href="https://www.google.com/maps/place/Mariscos+Richard/@19.2891408,-99.663015,17z" target="_blank">📍 Ubicación</a>
 </div>
 
 </body>
